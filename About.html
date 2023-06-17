@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
+<title>About Us</title>
+</head>
+<style>
+/* about */
+.main {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ABC8E2;
+}
+
+h2{
+    padding: .2em;
+    border-bottom: .1em;
+    border-bottom-style: dashed;
+    border-bottom-color: #ABC8E2;
+    color: #375D81;
+    font-family: 'Abel', sans-serif;
+
+}
+
+#about{
+    padding: 2em 10em;
+    background-color: white;
+}
+
+#about h2{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#about li{
+    list-style-type: square;
+    padding-bottom: .5em;
+}
+
+#about p{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+#about h3{
+    margin-bottom: .3em;
+    margin-top: 1em;
+    padding: 0;
+}
+
+/* navbar */
+#amnavbar {
+  width: 100%;
+  height: 230px;
+}
+
+#amnav1 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  /* border: 1px solid rgb(11, 10, 10); */
+  color: rgb(77, 73, 73);
+  font-family: 'Open Sans', sans-serif;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#amnav1>div>img {
+  height: 23px;
+  width: 30px;
+  margin-bottom: 7px;
+  margin-left: 1327px;
+
+}
+
+#amnav1>div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 15%;
+  color: rgb(77, 73, 73);
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 30%;
+
+}
+
+#amnav1>div>p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border:1px solid red; */
+  margin-left: 40px;
+  color: gray;
+
+}
+
+#amnav2 {
+  /* height:50%;
+  width:95%;
+  border: 1px solid red;
+  padding-left: 90px; */
+  /* border-bottom: 2px solid black; */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /* border:1px solid red;       */
+  width: 100%;
+  height: 50%
+}
+
+#amnav2>div>a>img {
+  height: 9%;
+  width: 55%;
+  margin-left: 85px;
+  /* border:1px solid red; */
+
+}
+
+.amsearch {
+  width: 28%;
+  height: 27px;
+  margin-left: 115px;
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.amsearch>input {
+  margin-left: 30px;
+  width: 410px;
+  margin: auto;
+  margin-left: 10px;
+  height: 15px;
+  border: 1px solid white;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: gray;
+}
+
+.amsearch>i {
+  font-size: 20px;
+  color: rgb(122, 118, 118);
+}
+
+#amaccount {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 15%;
+}
+
+#amaccount>i {
+  font-size: 20px;
+  gap: 10px;
+  margin-left: 20%;
+  padding-left: 0px;
+}
+
+#amaccount>p {
+  font-size: 17px;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 8px;
+}
+
+#aminnerbox {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 200px;
+}
+
+#amcart {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 40%;
+  /* border: 1px solid blue; */
+  width: 80px;
+
+
+}
+
+#amcart>i {
+  font-size: 20px;
+  gap: 10px;
+  margin-left: 20%;
+  padding-left: 0px;
+  padding-bottom: 4px;
+
+}
+
+#amcart>p {
+  font-size: 17px;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5px;
+}
+
+#amnav3 {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid black;
+}
+
+#amnav3Container {
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+#amnav3Container a {
+  text-decoration: none;
+}
+
+#amnav3Container div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-inline: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#amnav3Container div:hover {
+  background-color: black;
+}
+
+#amnav3Container div:hover>a {
+  color: white;
+}
+
+#amnav4 {
+  height: 30px;
+  width: 100%;
+  /* border: 1px solid pink; */
+  background-color: #eeeeee;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-evenly; */
+  padding-top: 12px;
+}
+
+#amlast {
+  /* border:1px solid blue; */
+  display: flex;
+  width: 70%;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top:50px; */
+}
+
+#amlast>div {
+  height: 20px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 10px;
+}
+
+/*--- Team---*/
+.team {
+  background: #ffffff;
+  padding: 60px 0;
+}
+
+.team .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .member-info {
+  padding: 25px 15px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #080224;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000281;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+}
+
+</style>
+<body>
+<!-- for Nav -->
+<div id="amnavbar">
+  <div id="amnav1">
+      <div ><img src="images/indonesia.jpg"/></div>
+      <div>
+          <p>ID</p>
+          <p>Help</p>
+      </div>
+  </div>
+  <div id="amnav2">
+      <div><a href="index.html"><img src="https://seeklogo.com/images/S/skinstore-logo-5281C41BD3-seeklogo.com.png"/></a></div>
+      <div class="amsearch">
+          <input type="text" name="" placeholder="Search for Product or brand...."/>
+          <i class="fa-solid fa-magnifying-glass"></i> 
+         </div>
+         <div id="aminnerbox">
+         <div id="amaccount">
+          <a href="login.html">
+          <i class="fa-solid fa-user-large"></i>
+          <p> Account</a></p>
+          </a>
+         </div>
+         <a href="cart.html">
+         <div id="amcart">
+              <i class="fa-solid fa-basket-shopping"></i>
+              <p> Cart</p>
+         </div>
+      </a>
+        </div>
+      </div>
+  <div id="amnav3">
+      <div id="amnav3Container">
+          <div><a href="index.html">HOME</a></div>  
+          <div><a href="summersale.html">SUMMER SALE</a></div>
+          <div><a href="sale.html">PRODUCT</a></div>
+          <div><a href="bodydata.html">BATH & BODY</a></div>
+          <div><a href="face.html">FACE</a></div>
+          <div><a href="hair.html">HAIR</a></div>  
+          <div><a href="fragnance.html">FRAGNANCE</a></div>
+          <div><a href="review.html">REVIEW USERS</a></div>
+          <div><a href="About.html">ABOUT US</a></div>
+          <div><a href="contactus.html">CONTACT US</a></div>
+      </div>
+  </div>
+
+  <div id="amnav4">
+      <div id="amlast">
+          <div>
+              <div>
+              <i class="fa-solid fa-truck"></i>
+              </div>
+              <div>
+              <p>FREE US Shipping Over Rp 250.000</p>
+              </div>
+          </div>
+          <div>
+                <div>
+              <i class="fa-solid fa-clock-rotate-left"></i>
+              </div>
+              <div>
+              <p>Refer a friend,Get Rp 15.000</p>
+              </div>
+              </div>
+              <div>
+                  <div>
+              <i class="fa-solid fa-suitcase"></i>
+              </div>
+              <div>
+              <p>New Customors save 20%-Use Code NEWBIE</p>
+              </div>
+              </div>
+          <div>
+                  <div>
+              <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <div>
+              <p>Download Our App</p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+    
+<br/>
+<div class="main">
+
+    <h1 align="center"><i>About Us</i></h1>
+
+<div id="about">
+
+<h2>Skin Store</h2>
+    <div id="about_text">
+    <ul>
+        <li>Respectful of the beauty of the environment and carries healthy values regarding the earth</li>
+        <li>Simple and contains only the most necessary ingredients (NO colorants, NO alcohol, NO parabens, NO artificial fragrances/fragrance free)</li>
+        <li>Always working to bring their products to customers at reasonable prices</li>
+        <li>A high-quality skincare brand for sensitive skin</li>
+    </ul>
+    </div>
+    
+    
+<h2>How Skin Store Works</h2>
+   
+<h3>Simple but enough</h3>
+<p>The condition of your skin will always change depending on the weather and the body’s condition. Protect your skin with Skin Store’ simple lineup that provides everything from cleansing and moisture to calming and soothing.</p>
+    
+<h3>Basic but ultimate</h3>
+<p>We take the time, no matter how long, to create the best simple products. Skin Store is effective even without the addition of special, unique ingredients. Just by using our products every day, your skin will slowly get healthier.</p>
+    
+<h3>Mild but powerful</h3>
+<p>Since 2009, we at Skin Store have been researching different ingredients and raw materials for the best skincare for sensitive skin. Our products not only improve the skin’s elasticity, but also quickly soothes irritated skin for ultimately healthier and stronger skin.</p>
+        
+<h2>Brand philosophy</h2>
+<h3>No harsh ingredients</h3>
+<p>Skin Store makes sure to create products with only the most effective, necessary raw ingredients, all of which have passed the safety measures of a research lab specializing in dermatologist brand skin care. We make sure our products don’t contain components that can irritate sensitive skin.</p>
+
+<h3>No animal testing</h3>
+<p>Since our foundation in 2009, we have not tested on animals. We don’t believe in harming animals for our cosmetic purposes and we are working to putting down animal testing.</p>
+
+<h3>High quality. Reasonable prices</h3>
+<p>Rather than conducting costly PR and marketing, the Skin Store name has been spread through satisfied customer reviews and word-of-mouth. We will always continue doing our best to provide the highest quality products to our customers for a fair price.</p>
+    
+<h2>For You</h2>
+
+<h3>What are the benefits/benefits for me?</h3>
+<ul>
+  <li>Helps brighten skin and fade blemishes face such as hyperpigmentation, acne scars, spots and scars wound.</li>
+  <li>Helps control excess oil levels in the skin, helps to shrink pores, improvise color skin, smoothing wrinkles and lines on the skin.</li>
+  <li>Help nourish and moisturize the skin.</li>
+  <li>Helps make the skin more relaxed and calm.</li>
+  <li>Works as an antioxidant and also as an anti pollution.</li>
+</ul>
+
+<h3>Why should I buy of your store?</h3>
+<p>Because it's one of the most widely used local skincare products
+  by the public today is Skin Store. This product
+  chosen because it has provided many benefits to the faces of the
+  women in Indonesia. Strong reason for you to buy
+  This Skin Store product is because it is easy to get.
+  It can be said that Skin Store is one of the products that
+  easiest to find in Indonesia.
+  This product is produced domestically and distributed throughout
+  Indonesia with the help of resellers or buying and selling platforms
+  on line. However, the most important thing before using the product
+  of Skin Store is knowing the type of skin that
+  owned. After knowing the skin type, you can choose
+  most suitable products or neutral type products</p>
+
+  <h3>Is Your Product More Better than Competitors?</h3>
+<p>Yes of course the Skin Store Care by Beauty product
+  Care is better than other competitors because we have
+  There are several different marketing techniques, including:
+  <br/><hr/>- Talking by word of mouth
+  When launching the Skin Store Care product, We
+  tell people beforehand
+  closest. Give all the benefits what will
+  obtained by consumers, when using the product.
+  We also don't hesitate to give a tester to
+  potential buyers, in the hope that they buy,
+  and use their products
+<br>- Cooperating with many marketplaces
+Skin Store Care by Beauty Care is also working together
+with many marketplaces, so that the products are easier
+reachable by many people who want to get skin
+moist and white.
+<br/>- Attractive promotions
+Skin Store Care by Beauty Care gives a discount
+the price or discount for the series of serum products. Apart from
+the quality of the products that really should be applauded, the price
+what is offered is also very affordable, and even
+accessible to various groups.</br.></p>
+
+<h2>FAQ</h2>
+
+<h3>When is the right time to use serum?
+  <br/>Answer :
+  <br/>Facial serum can be used in the morning or at night before going to bed. After using
+  facial serum, try not to expose your face to direct sunlight. Use serum
+  After washing your face and before using moisturizer. After the face is clean and dry,
+  new serum can be used on the face.
+  <br/>
+  <br/>How long does it take to see the results of the facial serum?
+  <br/>Answer :
+  The results of using facial serum will be seen maximally after using approximately 6-8
+  week.
+  <br/>How to use the correct serum?
+  <br/>Answer :
+  <br/>You can drop 2-3 drops of serum to the face, then wipe and massage slowly evenly
+  Leave it on the skin for a while so that the serum absorbs completely.
+  <br/>
+  <br/>Are the products sold at Beauty Care original and ready stock?
+  <br/>Answer :
+  <br/>All products sold at Beauty Care are guaranteed 100% Original because there is a unique code on the website
+  hologram (a mixture of letters and numbers) / scan the QR Code in each Brightening package
+  serum care and directly check (verify the authenticity of the product) to the official website of Skin Store care
+  to know the authenticity of the product and also this product is always Ready Stock. When the goods
+  If you want it to be sold out, then it says Out of Stock so buyers can't get it
+  add items to cart. Customers are welcome to send an email to the email address:
+  skinstore@gmail.com to get notified via email when the item is back in
+  stock.
+  <br/>
+  <br/>How to become a reseller of Skin Store care products?
+  <br/>Answer :
+  <br/>First, to become a Skin Store Care agent you can buy products through
+  shopee at the official store.
+  <br/>The second step is to buy Skin Store Care products to get
+  cheaper prices, you can buy products in wholesale form. In the meaning of
+  buy multiple products at once.</h3>
+
+<!-- ======= Team Section ======= -->
+<section id="team" class="team">
+  <div class="container">
+
+    <div class="section-title" align="center">
+      <h2>STRUKTUR TEAM</h2>
+      <h3>WE OUR <span>TEAM</span></h3>
+      <p>WEBSITE CREATED BY KELOMPOK 5</p>
+      <br>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <div class="member-img">
+            <br>
+            <br>
+            <img src="Images/ridho.jpeg" width="400px" height="400px" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>2005311115 - RIDHO ADRIANSYAH</h4>
+            <span>OWNER</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <div class="member-img">
+            <br>
+            <br>
+            <img src="Images/amelia.jpeg" width="400px" height="400px" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>2005311046 - RIZKY AMELIA</h4>
+            <span>MANAGER</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <div class="member-img">
+            <br>
+            <br>
+            <img src="Images/rahma.jpeg" width="400px" height="400px" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>2005311032 - RAHMAWATI</h4>
+            <span>KEPALA STAFF PRODUKSI DAN PENGIRIMAN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <div class="member-img">
+            <br>
+            <br>
+            <img src="Images/natasha.jpeg" width="400px" height="400px" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>2005311095 - NATASHA D.W</h4>
+            <span>KEPALA STAFF ADMINISTRASI DAN DISTRIBUSI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <div class="member-img">
+            <br>
+            <br>
+            <img src="Images/rania.jpeg" width="400px" height="400px" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>2005311071 - RANIA ZAALFAINNISSA N.C</h4>
+            <span>KEPALA STAFF KEUANGAN DAN PENCATATAN</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+</form>
+<!-- End Team Section -->
+
+</div>
+        <footer>
+        <p>Skin Store co. (1234 Imaginary State Politeknik Negeri Jakarta, Depok, ID 11500) <br/>
+                © 2022 Dear, Skin Store. All rights reserved.</p>
+        
+        <p>Website created by Kelompok 5</p>
+    </footer>
+</div>
+</div>
+<script>
+function tinyNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {stickyNav()};
+
+// Get the navbar
+var navbar = document.getElementById("myTopnav");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickyNav() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+
+</body>
+</html>
